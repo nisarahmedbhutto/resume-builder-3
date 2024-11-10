@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="resumeContenor">
+        <!-- form contenor -->
+        <div id="formParent">
+            <form id="formInput">
+                <div id="heading">        
+                    <h1 ><span id="head1">Dynamic</span> Resume <span id="head2">Builder</span></h1>
+                </div>
+            <fieldset>
+                <legend>Personal Informition</legend>
+                <br>
+                <label for="name">Name :</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <br>
+                <label for="phone">Phone :</label>
+                <br>
+                <input type="number" name="phone" id="phone" placeholder="Enter Your Phone" required>
+                <br>
+                <label for="email">Email :</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Education :</legend>
+                <textarea name="text" id="education" rows="4" placeholder="Enter Your Education" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Skills :</legend>
+                <textarea name="text" id="skills" rows="4" placeholder="Enter Your Skills" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Work Experience :</legend>
+                <textarea name="text" id="experience" rows="4" placeholder="Enter Your Work Experience" required></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+        </div>
+        <!-- display data dynamically here in the div -->
+        <div id="displayResumeData">
+            <!-- data accsess -->
+        </div>
+    </div>
+    <!-- javascript added here -->
+    <script src="index.js"></script>
+</body>
+</html>
